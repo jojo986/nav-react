@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Gallery from './Gallery'
+import Gallery from './Gallery/Gallery'
 import Discussion from './Discussion'
 import Rules from './Rules'
 import Workflow from './Workfolw';
@@ -10,12 +10,10 @@ class PageContent extends Component {
         return (
             <section>
                 <Switch>
-                    <div>
-                        <Route exact path="/" component={Gallery} />
-                        <Route exact path="/discussion" component={Discussion} />
-                        <Route exact path="/rules" component={Rules} />
-                        <Route exact path="/workflow" component={Workflow} />
-                   </div>
+                    <Route exact path="/" component={Gallery} />
+                    <Route path="/discussion" component={Discussion} />
+                    <Route path="/rules" component={Rules} />
+                    <Route path="/workflow" component={Workflow} />
                 </Switch>
             </section>
         )

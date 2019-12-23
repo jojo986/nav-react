@@ -1,5 +1,6 @@
 import React,{ Component } from 'react';
 import axios from 'axios';
+import Image from './Image'
 
 class Gallery extends Component {
     constructor(props) {
@@ -25,7 +26,7 @@ class Gallery extends Component {
         return (
             <section>
                 {this.state.gallery.map((gallery)=> (
-                    <img src={gallery.thumbnailUrl} />
+                    <Image key={gallery.id} gallery={gallery} />
                 ))}
             </section>
         )
