@@ -3,7 +3,10 @@ import React, { Component } from 'react';
 class Image extends Component {
     render() {
         return (
-            <img src={this.gallery.thumbnailUrl} />
+            <article>
+                <figure><img src={this.props.gallery.thumbnailUrl} /></figure>
+                <h2>{this.props.gallery.title}</h2>
+            </article>
         )
     }
 }

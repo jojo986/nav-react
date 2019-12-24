@@ -25,8 +25,8 @@ class Gallery extends Component {
     render() {
         return (
             <section>
-                {this.state.gallery.map((gallery)=> (
-                    <Image key={gallery.id} gallery={gallery} />
+                {this.state.gallery.map((item)=> (
+                    <Image key={item.id} gallery={item} />
                 ))}
             </section>
         )
