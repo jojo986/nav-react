@@ -8,14 +8,14 @@ import Workflow from './Workfolw';
 class PageContent extends Component {
     render() {
         return (
-            <section>
+            
                 <Switch>
                     <Route exact path="/" component={Gallery} />
                     <Route path="/discussion" component={Discussion} />
                     <Route path="/rules" component={Rules} />
                     <Route path="/workflow" component={Workflow} />
                 </Switch>
-            </section>
+         
         )
     }
 }

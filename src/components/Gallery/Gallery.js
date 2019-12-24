@@ -24,10 +24,13 @@ class Gallery extends Component {
 
     render() {
         return (
-            <section>
-                {this.state.gallery.map((item)=> (
-                    <Image key={item.id} gallery={item} />
-                ))}
+            <section className="text-center">
+                <input type="text" className="input" placeholder="Search" />
+                <section>
+                    {this.state.gallery.map((item)=> (
+                        <Image key={item.id} gallery={item} />
+                    ))}
+                </section>
             </section>
         )
     }

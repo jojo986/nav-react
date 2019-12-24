@@ -31,7 +31,12 @@ header ul li {display: inline-block;padding: 0 10px;line-height: 55px;}
 .App-link {
   color: #61dafb;
 }
-
+input {background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
+  box-shadow: 0 0 5px #bdbdbd;
+  border: none;
+  padding: 10px;margin: 10px 0;
+  width: 400px;}
+.text-center {text-align: center;}
 article {width: 25%;float: left;}
 article figure {text-align: center;}
 article h2 {text-align: center;}
